@@ -52,5 +52,11 @@ class InputNameCell: UITableViewCell , UITextFieldDelegate{
         return true
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let string = textField.text , textField.text != "" {
+            delegate?.getTextFieldString(string: string)
+        }
+    }
+    
 
 }

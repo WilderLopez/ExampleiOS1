@@ -34,7 +34,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="jca-d4-aRi">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="724"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="InputNameCellID" id="cwK-iS-veu" customClass="InputNameCell" customModule="Examenios1" customModuleProvider="target">
@@ -119,18 +119,37 @@
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="no6-qc-gJw">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="52A-1F-gu6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Enviar Datos a Firestore">
+                                    <color key="titleColor" name="AccentColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="UploadDataToFirestore:" destination="Sth-GH-L8D" eventType="touchUpInside" id="2UI-3e-xoE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cka-uQ-Dki"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jca-d4-aRi" firstAttribute="leading" secondItem="cka-uQ-Dki" secondAttribute="leading" id="1e4-d8-2SP"/>
-                            <constraint firstItem="cka-uQ-Dki" firstAttribute="bottom" secondItem="jca-d4-aRi" secondAttribute="bottom" id="KXt-Sg-S8Z"/>
+                            <constraint firstItem="no6-qc-gJw" firstAttribute="top" secondItem="jca-d4-aRi" secondAttribute="bottom" id="5Up-qj-7r0"/>
+                            <constraint firstItem="cka-uQ-Dki" firstAttribute="bottom" secondItem="no6-qc-gJw" secondAttribute="bottom" id="6Iv-s4-JgK"/>
+                            <constraint firstItem="cka-uQ-Dki" firstAttribute="trailing" secondItem="no6-qc-gJw" secondAttribute="trailing" id="Wlw-K3-xxe"/>
                             <constraint firstItem="cka-uQ-Dki" firstAttribute="trailing" secondItem="jca-d4-aRi" secondAttribute="trailing" id="ZMD-hj-rLW"/>
                             <constraint firstItem="jca-d4-aRi" firstAttribute="top" secondItem="cka-uQ-Dki" secondAttribute="top" id="g9m-17-igj"/>
+                            <constraint firstItem="no6-qc-gJw" firstAttribute="leading" secondItem="cka-uQ-Dki" secondAttribute="leading" id="zLm-jB-dWF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="PmV-Ga-P1s"/>
                     <connections>
+                        <outlet property="btn_uploadUserInfo" destination="no6-qc-gJw" id="J9B-Ca-CHz"/>
                         <outlet property="mainTableView" destination="jca-d4-aRi" id="i1X-PF-XN0"/>
                         <segue destination="OBx-UY-hzn" kind="show" identifier="SegueSelfieDetails" id="iVu-7M-7pZ"/>
                         <segue destination="TJP-bI-Sfs" kind="show" identifier="SegueGraphicsDescription" id="1qL-R2-fSa"/>
@@ -138,7 +157,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Oq-L3-99p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-323" y="106"/>
+            <point key="canvasLocation" x="-323.1884057971015" y="105.80357142857143"/>
         </scene>
         <!--Banner CategoryVC-->
         <scene sceneID="tne-QT-ifu">
