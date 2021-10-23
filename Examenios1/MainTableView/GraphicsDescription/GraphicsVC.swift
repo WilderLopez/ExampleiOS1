@@ -1,5 +1,5 @@
 //
-//  SelfieDetailVC.swift
+//  GraphicsVC.swift
 //  Examenios1
 //
 //  Created by Wilder Lopez on 10/23/21.
@@ -7,17 +7,12 @@
 
 import UIKit
 
-class SelfieDetailVC: UIViewController {
-    
-    @IBOutlet weak var imageView : UIImageView!
-    
-    var selfieImage : UIImage!
-    
+class GraphicsVC: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         // Do any additional setup after loading the view.
-        self.imageView.image = selfieImage
     }
     
     override func viewDidAppear(_ animated: Bool) {

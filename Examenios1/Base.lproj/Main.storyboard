@@ -94,15 +94,15 @@
                                             <outlet property="btn_selfie" destination="cLb-Y3-LSv" id="RTH-JF-rzy"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="74s-2f-2eC">
-                                        <rect key="frame" x="0.0" y="133" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GraphicsDescriptionCellID" id="74s-2f-2eC" customClass="GraphicsDescriptionCell" customModule="Examenios1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="133" width="414" height="43"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="74s-2f-2eC" id="wTN-a3-RcT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver Gráficas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rf-jR-ihp">
-                                                    <rect key="frame" x="35" y="11" width="344" height="21.5"/>
+                                                    <rect key="frame" x="35" y="11" width="344" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
@@ -133,6 +133,7 @@
                     <connections>
                         <outlet property="mainTableView" destination="jca-d4-aRi" id="i1X-PF-XN0"/>
                         <segue destination="OBx-UY-hzn" kind="show" identifier="SegueSelfieDetails" id="iVu-7M-7pZ"/>
+                        <segue destination="TJP-bI-Sfs" kind="show" identifier="SegueGraphicsDescription" id="1qL-R2-fSa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Oq-L3-99p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -183,7 +184,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0F4-8k-7zG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1336" y="832"/>
+            <point key="canvasLocation" x="-323" y="945"/>
+        </scene>
+        <!--GraphicsVC-->
+        <scene sceneID="pM7-x1-TiT">
+            <objects>
+                <viewController id="TJP-bI-Sfs" customClass="GraphicsVC" customModule="Examenios1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v3b-eQ-X2U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="HeC-2o-qeX"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="JrS-aA-dZJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zbs-Lb-V5u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="739" y="945"/>
         </scene>
     </scenes>
     <resources>

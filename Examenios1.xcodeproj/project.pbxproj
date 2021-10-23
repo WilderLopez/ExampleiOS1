@@ -21,6 +21,10 @@
 		815E1B8827248A8600DB50F7 /* Extension-MainVC-TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B8727248A8600DB50F7 /* Extension-MainVC-TableView.swift */; };
 		815E1B8A27248B3700DB50F7 /* ImagePickerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B8927248B3700DB50F7 /* ImagePickerManager.swift */; };
 		815E1B8D27248EFB00DB50F7 /* SelfieDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B8C27248EFB00DB50F7 /* SelfieDetailVC.swift */; };
+		815E1B8F27249E6800DB50F7 /* GraphicsDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B8E27249E6800DB50F7 /* GraphicsDescriptionCell.swift */; };
+		815E1B912724A2DE00DB50F7 /* MyFirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B902724A2DE00DB50F7 /* MyFirebaseManager.swift */; };
+		815E1B932724B08F00DB50F7 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B922724B08F00DB50F7 /* ColorExtension.swift */; };
+		815E1B962724B4B100DB50F7 /* GraphicsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E1B952724B4B100DB50F7 /* GraphicsVC.swift */; };
 		81F8EA472723A06D00F8C201 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8EA462723A06D00F8C201 /* AppDelegate.swift */; };
 		81F8EA492723A06D00F8C201 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F8EA482723A06D00F8C201 /* SceneDelegate.swift */; };
 		81F8EA4E2723A06D00F8C201 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F8EA4C2723A06D00F8C201 /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		815E1B8727248A8600DB50F7 /* Extension-MainVC-TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension-MainVC-TableView.swift"; sourceTree = "<group>"; };
 		815E1B8927248B3700DB50F7 /* ImagePickerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerManager.swift; sourceTree = "<group>"; };
 		815E1B8C27248EFB00DB50F7 /* SelfieDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfieDetailVC.swift; sourceTree = "<group>"; };
+		815E1B8E27249E6800DB50F7 /* GraphicsDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsDescriptionCell.swift; sourceTree = "<group>"; };
+		815E1B902724A2DE00DB50F7 /* MyFirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirebaseManager.swift; sourceTree = "<group>"; };
+		815E1B922724B08F00DB50F7 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
+		815E1B952724B4B100DB50F7 /* GraphicsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphicsVC.swift; sourceTree = "<group>"; };
 		81F8EA432723A06D00F8C201 /* Examenios1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Examenios1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F8EA462723A06D00F8C201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F8EA482723A06D00F8C201 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +99,7 @@
 				815E1B702724447300DB50F7 /* ApiClient.swift */,
 				815E1B722724485900DB50F7 /* Extension-Codable.swift */,
 				815E1B74272448C700DB50F7 /* ApiError.swift */,
+				815E1B902724A2DE00DB50F7 /* MyFirebaseManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -107,6 +116,7 @@
 		815E1B7C272466A400DB50F7 /* MainTableView */ = {
 			isa = PBXGroup;
 			children = (
+				815E1B942724B48000DB50F7 /* GraphicsDescription */,
 				815E1B8B27248EDE00DB50F7 /* SelfieDetails */,
 				815E1B8627248A4100DB50F7 /* TableViewCells */,
 				815E1B7D2724676F00DB50F7 /* MainVC.swift */,
@@ -120,6 +130,7 @@
 			children = (
 				815E1B822724777500DB50F7 /* Extension-VC.swift */,
 				815E1B8927248B3700DB50F7 /* ImagePickerManager.swift */,
+				815E1B922724B08F00DB50F7 /* ColorExtension.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -129,6 +140,7 @@
 			children = (
 				815E1B7F272470AC00DB50F7 /* InputNameCell.swift */,
 				815E1B84272482D500DB50F7 /* TakeSalfieCell.swift */,
+				815E1B8E27249E6800DB50F7 /* GraphicsDescriptionCell.swift */,
 			);
 			path = TableViewCells;
 			sourceTree = "<group>";
@@ -139,6 +151,14 @@
 				815E1B8C27248EFB00DB50F7 /* SelfieDetailVC.swift */,
 			);
 			path = SelfieDetails;
+			sourceTree = "<group>";
+		};
+		815E1B942724B48000DB50F7 /* GraphicsDescription */ = {
+			isa = PBXGroup;
+			children = (
+				815E1B952724B4B100DB50F7 /* GraphicsVC.swift */,
+			);
+			path = GraphicsDescription;
 			sourceTree = "<group>";
 		};
 		81F8EA3A2723A06D00F8C201 = {
@@ -302,9 +322,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				815E1B962724B4B100DB50F7 /* GraphicsVC.swift in Sources */,
 				815E1B75272448C700DB50F7 /* ApiError.swift in Sources */,
 				815E1B732724485900DB50F7 /* Extension-Codable.swift in Sources */,
 				81F8EA472723A06D00F8C201 /* AppDelegate.swift in Sources */,
+				815E1B932724B08F00DB50F7 /* ColorExtension.swift in Sources */,
+				815E1B912724A2DE00DB50F7 /* MyFirebaseManager.swift in Sources */,
 				815E1B7B2724617500DB50F7 /* BannerCategoryVC.swift in Sources */,
 				815E1B7E2724676F00DB50F7 /* MainVC.swift in Sources */,
 				815E1B832724777500DB50F7 /* Extension-VC.swift in Sources */,
@@ -315,6 +338,7 @@
 				815E1B8A27248B3700DB50F7 /* ImagePickerManager.swift in Sources */,
 				815E1B85272482D500DB50F7 /* TakeSalfieCell.swift in Sources */,
 				815E1B6E2723D62E00DB50F7 /* ModelData.swift in Sources */,
+				815E1B8F27249E6800DB50F7 /* GraphicsDescriptionCell.swift in Sources */,
 				815E1B782724599D00DB50F7 /* BannerCategoryViewModel.swift in Sources */,
 				815E1B712724447300DB50F7 /* ApiClient.swift in Sources */,
 			);

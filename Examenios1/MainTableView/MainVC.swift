@@ -6,6 +6,9 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseDatabase
+
 
 class MainVC: UIViewController {
 
@@ -13,16 +16,25 @@ class MainVC: UIViewController {
     
     var selfie : UIImage?
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         mainTableView.delegate = self
         mainTableView.dataSource = self
-        
+    
         mainTableView.keyboardDismissMode = .onDrag
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        //Agregar en todos los VC
+        UIColourScheme.instance.set(for:self)
+        
+    }
 
 }
 
