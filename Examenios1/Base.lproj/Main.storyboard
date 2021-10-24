@@ -95,14 +95,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="GraphicsDescriptionCellID" id="74s-2f-2eC" customClass="GraphicsDescriptionCell" customModule="Examenios1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="133" width="414" height="43"/>
+                                        <rect key="frame" x="0.0" y="133" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="74s-2f-2eC" id="wTN-a3-RcT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ver Gráficas" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Rf-jR-ihp">
-                                                    <rect key="frame" x="35" y="11" width="344" height="21"/>
+                                                    <rect key="frame" x="35" y="11" width="344" height="21.5"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                     <color key="textColor" name="AccentColor"/>
                                                     <nil key="highlightedColor"/>
@@ -159,22 +159,6 @@
             </objects>
             <point key="canvasLocation" x="-323.1884057971015" y="105.80357142857143"/>
         </scene>
-        <!--Banner CategoryVC-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController storyboardIdentifier="ViewController" id="BYZ-38-t0r" customClass="BannerCategoryVC" customModule="Examenios1" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="nKL-uA-TNM"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="646" y="106"/>
-        </scene>
         <!--Selfie DetailVC-->
         <scene sceneID="Ncp-zn-eWl">
             <objects>
@@ -212,14 +196,75 @@
                     <view key="view" contentMode="scaleToFill" id="v3b-eQ-X2U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="gYS-4f-Ogb">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="QuestionCellID" rowHeight="516" id="mLq-i8-8et" customClass="QuestionCell" customModule="Examenios1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="516"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mLq-i8-8et" id="cIR-ni-6Gz">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="516"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Que empresa cuentan con medidas  de seguridad" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gla-gc-pl6">
+                                                    <rect key="frame" x="20" y="11" width="374" height="75"/>
+                                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79r-lK-wR2">
+                                                    <rect key="frame" x="97" y="116" width="220" height="220"/>
+                                                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="220" id="DZ2-uf-HMF"/>
+                                                        <constraint firstAttribute="width" constant="220" id="eyP-l7-lHp"/>
+                                                    </constraints>
+                                                </view>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bhy-AU-UxM" userLabel="Stack View ">
+                                                    <rect key="frame" x="20" y="366" width="374" height="139"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Bhy-AU-UxM" secondAttribute="bottom" id="2nO-uA-DTC"/>
+                                                <constraint firstItem="gla-gc-pl6" firstAttribute="trailing" secondItem="cIR-ni-6Gz" secondAttribute="trailingMargin" id="DSe-jN-RZQ"/>
+                                                <constraint firstItem="79r-lK-wR2" firstAttribute="centerX" secondItem="cIR-ni-6Gz" secondAttribute="centerX" id="FI6-Ng-6Jb"/>
+                                                <constraint firstItem="Bhy-AU-UxM" firstAttribute="top" secondItem="79r-lK-wR2" secondAttribute="bottom" constant="30" id="G2w-EV-qXr"/>
+                                                <constraint firstItem="gla-gc-pl6" firstAttribute="leading" secondItem="cIR-ni-6Gz" secondAttribute="leadingMargin" id="TJd-EE-Aiy"/>
+                                                <constraint firstItem="Bhy-AU-UxM" firstAttribute="leading" secondItem="cIR-ni-6Gz" secondAttribute="leadingMargin" id="Vfz-7p-c5h"/>
+                                                <constraint firstItem="79r-lK-wR2" firstAttribute="top" secondItem="gla-gc-pl6" secondAttribute="bottom" constant="30" id="vPm-5p-Ggs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Bhy-AU-UxM" secondAttribute="trailing" id="weN-y3-qrl"/>
+                                                <constraint firstItem="gla-gc-pl6" firstAttribute="top" secondItem="cIR-ni-6Gz" secondAttribute="topMargin" id="xvZ-6f-T3w"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="chartDataStackView" destination="Bhy-AU-UxM" id="4Oz-cb-2s5"/>
+                                            <outlet property="circleView" destination="79r-lK-wR2" id="A9K-QG-tzb"/>
+                                            <outlet property="title" destination="gla-gc-pl6" id="hsH-sg-nEu"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HeC-2o-qeX"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="HeC-2o-qeX" firstAttribute="trailing" secondItem="gYS-4f-Ogb" secondAttribute="trailing" id="7eJ-02-T75"/>
+                            <constraint firstItem="gYS-4f-Ogb" firstAttribute="leading" secondItem="HeC-2o-qeX" secondAttribute="leading" id="Bmb-lc-bR1"/>
+                            <constraint firstItem="HeC-2o-qeX" firstAttribute="bottom" secondItem="gYS-4f-Ogb" secondAttribute="bottom" id="nKe-dy-qKS"/>
+                            <constraint firstItem="gYS-4f-Ogb" firstAttribute="top" secondItem="HeC-2o-qeX" secondAttribute="top" id="wc2-Ka-KSb"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JrS-aA-dZJ"/>
+                    <connections>
+                        <outlet property="questionTableView" destination="gYS-4f-Ogb" id="xui-fm-OE5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zbs-Lb-V5u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="945"/>
+            <point key="canvasLocation" x="737.68115942028987" y="944.86607142857133"/>
         </scene>
     </scenes>
     <resources>
@@ -228,6 +273,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
