@@ -216,10 +216,20 @@
                                                 </label>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79r-lK-wR2">
                                                     <rect key="frame" x="97" y="116" width="220" height="220"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="not finished" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nvR-u8-mUd">
+                                                            <rect key="frame" x="65" y="99.5" width="90" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
                                                     <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="220" id="DZ2-uf-HMF"/>
+                                                        <constraint firstItem="nvR-u8-mUd" firstAttribute="centerY" secondItem="79r-lK-wR2" secondAttribute="centerY" id="eCN-4j-Cds"/>
                                                         <constraint firstAttribute="width" constant="220" id="eyP-l7-lHp"/>
+                                                        <constraint firstItem="nvR-u8-mUd" firstAttribute="centerX" secondItem="79r-lK-wR2" secondAttribute="centerX" id="syc-sE-OHX"/>
                                                     </constraints>
                                                 </view>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bhy-AU-UxM" userLabel="Stack View ">
