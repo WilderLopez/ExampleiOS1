@@ -31,11 +31,15 @@ class MainVC: UIViewController {
         mainTableView.keyboardDismissMode = .onDrag
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         //Agregar en todos los VC
         UIColourScheme.instance.set(for:self)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
         self.userDataViewModel = .init(delegate: self)
     }
     

@@ -21,6 +21,9 @@ class BannerCategoryVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        //Agregar en todos los VC
+        UIColourScheme.instance.set(for:self)
+        
         bannerCategoryViewModel = .init(delegate: self)
         bannerCategoryViewModel?.getBannerCategory()
     }

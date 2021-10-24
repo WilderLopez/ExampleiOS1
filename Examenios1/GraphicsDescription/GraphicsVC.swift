@@ -15,8 +15,8 @@ class GraphicsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         //Agregar en todos los VC
         UIColourScheme.instance.set(for:self)
